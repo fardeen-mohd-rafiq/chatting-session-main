@@ -1,0 +1,285 @@
+.header {
+  box-shadow: 0 0 9px 0 rgb(0 0 0 / 32%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.theme_btn:hover,
+.theme_btn:focus {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.dark_row {
+  background-color: rgba(29, 29, 29, .98);
+}
+
+.createsessionpage {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  margin: 0;
+  padding: 25px;
+  background-color: #f2f2f2;
+}
+
+.textbox {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 1px 3px 7px 0 rgb(0 0 0 / 16%);
+}
+
+.sessionText {
+  background-color: #f2f2f2 !important;
+  color: #4c4c4c;
+  font-size: 18px !important;
+  resize: none;
+  border: none !important;
+}
+
+.submit_btn {
+  margin: 20px 10px 10px;
+}
+
+.submit_btn:hover {
+  background-color: #111f38 !important;
+}
+
+.join_btn {
+  border: none;
+  transition: 0.4s;
+  border-radius: 8px !important;
+  width: 95% !important;
+  height: 90px !important;
+}
+
+.join_btn:hover {
+  transform: scale(1.1);
+  background-color: #111f38 !important;
+}
+
+.tar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 30%);
+}
+
+.ilmx {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.dark_row {
+  .header {
+    background-color: #3a3a3a !important;
+  }
+
+  .tar {
+    background-color: #3a3a3a !important;
+
+    .version{
+      color: #c1c1c1;
+    }
+  }
+
+  .main {
+    background-color: rgba(29, 29, 29, .98) !important;
+
+    .createsessionpage {
+      background-color: rgba(29, 29, 29, .98) !important;
+
+      .textbox {
+        background-color: #3a3a3a !important;
+
+        .sessionText {
+          background-color: rgba(29, 29, 29, .98) !important;
+        }
+
+        .submit_btn {
+          background-color: #c1c1c1;
+          color: #4c4c4c;
+        }
+
+        .submit_btn:hover {
+          background-color: #f2f2f2 !important;
+        }
+
+        
+      }
+
+      .join_btn {
+        background-color: #c1c1c1;
+        color: #4c4c4c;
+      }
+
+      .join_btn:hover {
+        background-color: #f2f2f2 !important;
+        transform: scale(1.1);
+      }
+      
+    }
+  }
+  
+  
+
+}
+
+.ChattingSession{
+  height: 100%!important;
+  width: 100% ;
+  overflow: auto;
+  margin: 0;
+  background-color: #f2f2f2;
+
+  .chatBoard{
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;  
+  box-shadow: 2px 2px 7px 0px rgb(0 0 0 / 19%);
+  }
+
+  .chatMode{
+    margin-left: 10px;
+    i{
+    color: #3cad50;
+    margin-left: 5px;
+    animation: blink 2s infinite linear;
+    }
+  }
+
+  .chatArea{
+    height: 100%;
+  }
+
+
+  .attachbtn{
+    font-size: 20px;
+    font-weight: 600;
+    &:hover{
+      background-color: #3cad50;
+      color: #fff;
+    }
+    &:focus{
+      box-shadow: none;
+    }
+  }
+
+  .msgInput{
+    &:focus{
+      box-shadow: none;
+      border: none  ;
+    }
+  }
+
+  .sendbtn {
+    background: transparent;
+    &:hover{
+      background-color: transparent;
+    }
+    &:focus{
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  .copybtn{
+    &:hover{
+      background-color: #2b3954;
+      color: #fff;
+    }
+  }
+
+  .linkArea {
+    background-color: #2b3954;
+    overflow: hidden;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 40px;
+    color: hsla(0, 0%, 100%, .7);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .endbtn{
+    padding: 10px 60px;
+    border: 2px solid #dc3545;
+    color: #dc3545;
+    &:hover{
+      background-color: #dc3545;
+      color: #fff;
+    }
+  }
+}
+
+.tokenArea{
+  height: max-content;
+}
+
+.dark_row2{
+  .ChattingSession,
+  .chatArea {
+    background-color: #212121;
+  }
+  .chatBoard,
+  .tokenArea{
+    background-color: #3a3a3a;
+  }
+
+  .typingbox,
+  .linkArea,
+  .reloadbtn
+  {
+    background-color: #c8c8c8;
+    color: #2d2929;    
+  }
+
+  .sendbtn {
+    color: #2d2929;
+  }
+
+  .tokenArea {
+    color: #fff !important;
+    .copybtn{
+     color: #000;
+    }
+    .tokenNum{
+      color: #fff;
+    }
+  }
+  
+}
+
+.closeModal{
+  border: none !important;
+  box-shadow: none !important;
+  &:hover{
+    background-color: #fe9833 !important;
+  }
+}
+
+.container2 {
+  height: 100%;
+  width: 100%;
+}
+
+
+@keyframes blink {
+  0%,
+  98%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+}
